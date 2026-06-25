@@ -1,1 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sustentabilidade - Futuro Verde</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4fff4;
+color:#333;
+transition:0.3s;
+}
+
+header{
+background:linear-gradient(135deg,#2e7d32,#4caf50);
+color:white;
+text-align:center;
+padding:30px;
+}
+
+nav{
+background:#1b5e20;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.hero{
+text-align:center;
+padding:40px;
+}
+
+.hero img{
+width:90%;
+max-width:900px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+section{
+padding:40px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:20px;
+width:300px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.galeria img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+transition:0.4s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+.quiz{
+background:#e8f5e9;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+button{
+background:#2e7d32;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+margin:5px;
+}
+
+button:hover{
+background:#1b5e20;
+}
+
+.acessibilidade{
+position:fixed;
+top:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+z-index:999;
+}
+
+.contraste{
+background:black;
+color:white;
+}
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.contador{
+font-size:35px;
+font-weight:bold;
+color:#2e7d32;
+text-align:center;
+}
+
+.animacao{
+animation:flutuar 3s infinite;
+}
+
+@keyframes flutuar{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="acessibilidade">
+<button onclick="aumentarFonte()">A+</button>
+<button onclick="diminuirFonte()">A-</button>
+<button onclick="altoContraste()">Contraste</button>
+</div>
+
+<header>
+<h1>🌎 Futuro Sustentável</h1>
+<p>Produção e Meio Ambiente em Equilíbrio</p>
+</header>
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#acoes">Ações</a>
+<a href="#galeria">Galeria</a>
+<a href="#quiz">Quiz</a>
+</nav>
+
+<section class="hero">
+<img class="animacao" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Floresta sustentável">
+</section>
+
+<section id="sobre">
+<h2>🌱 O que é Sustentabilidade?</h2>
+<br>
+<p>
+Sustentabilidade significa utilizar os recursos naturais de forma responsável,
+garantindo qualidade de vida para as gerações atuais e futuras.
+Ela busca equilibrar crescimento econômico, desenvolvimento social e preservação ambiental.
+</p>
+</section>
+
+<section id="acoes">
+<h2>♻️ Ações Sustentáveis</h2>
+<br>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌳 Reflorestamento</h3>
+<p>Plantio de árvores para recuperar áreas degradadas.</p>
+</div>
+
+<div class="card">
+<h3>☀️ Energia Solar</h3>
+<p>Uso de fontes renováveis para reduzir a poluição.</p>
+</div>
+
+<div class="card">
+<h3>🚲 Mobilidade Verde</h3>
+<p>Uso de bicicletas e transporte sustentável.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 align="center">🌲 Árvores Plantadas</h2>
+<br>
+<div class="contador" id="contador">0</div>
+<center>
+<button onclick="plantarArvore()">Plantar Árvore</button>
+</center>
+</section>
+
+<section id="galeria">
+<h2>📸 Galeria Sustentável</h2>
+<br>
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+<img src="https://images.unsplash.com/photo-1511497584788-876760111969">
+
+<img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7">
+
+</div>
+
+</section>
+
+<section id="quiz">
+
+<div class="quiz">
+
+<h2>🎯 Quiz Sustentável</h2>
+<br>
+
+<p>Qual destas é uma fonte de energia renovável?</p>
+
+<button onclick="resposta('errado')">Carvão</button>
+<button onclick="resposta('certo')">Energia Solar</button>
+<button onclick="resposta('errado')">Petróleo</button>
+
+<h3 id="resultado"></h3>
+
+</div>
+
+</section>
+
+<section>
+<h2 align="center">🎵 Sons da Natureza</h2>
+<br>
+
+<center>
+<button onclick="tocarSom()">Ouvir Som</button>
+</center>
+
+<audio id="som">
+<source src="https://www.soundjay.com/nature/birds-1.mp3" type="audio/mpeg">
+</audio>
+
+</section>
+
+<footer>
+<h3>🌍 Sustentabilidade: cuidar hoje para viver amanhã.</h3>
+</footer>
+
+<script>
+
+let tamanho = 16;
+
+function aumentarFonte(){
+tamanho += 2;
+document.body.style.fontSize = tamanho + "px";
+}
+
+function diminuirFonte(){
+tamanho -= 2;
+document.body.style.fontSize = tamanho + "px";
+}
+
+function altoContraste(){
+document.body.classList.toggle("contraste");
+}
+
+function resposta(tipo){
+
+if(tipo=="certo"){
+document.getElementById("resultado").innerHTML=
+"✅ Parabéns! Energia solar é renovável.";
+}else{
+document.getElementById("resultado").innerHTML=
+"❌ Resposta incorreta. Tente novamente!";
+}
+}
+
+let arvores = 0;
+
+function plantarArvore(){
+arvores++;
+document.getElementById("contador").innerHTML = arvores;
+}
+
+function tocarSom(){
+document.getElementById("som").play();
+}
+
+</script>
+
+</body>
+</html>
