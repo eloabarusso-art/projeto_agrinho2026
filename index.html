@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoInova | Consultoria em Sustentabilidade Corporativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-bar" role="complementary" aria-label="Ferramentas de Acessibilidade">
+        <div class="container accessibility-container">
+            <span>Acessibilidade:</span>
+            <button id="btn-font-decrease" aria-label="Diminuir tamanho do texto">A-</button>
+            <button id="btn-font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+            <button id="btn-contrast" aria-label="Alternar alto contraste">Alto Contraste</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo" aria-label="EcoInova Home">Eco<span>Inova</span></a>
+            <nav class="nav" aria-label="Navegação Principal">
+                <a href="#beneficios">Benefícios</a>
+                <a href="#solucoes">Soluções</a>
+                <a href="#depoimentos">Cases</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="#cta-form" class="btn btn-primary">Agendar Diagnóstico</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Transformação Sustentável</span>
+                <h1>Sua empresa lucrando mais enquanto protege o planeta</h1>
+                <p>Implemente estratégias ESG personalizadas que reduzem custos operacionais em até 35%, atraem investidores e posicionam sua marca como líder do futuro.</p>
+                <div class="hero-actions">
+                    <a href="#cta-form" class="btn btn-primary">Quero Transformar Minha Empresa</a>
+                    <a href="#solucoes" class="btn btn-secondary">Conhecer Soluções</a>
+                </div>
+            </div>
+            <div class="hero-image-placeholder">
+                <div class="eco-badge">
+                    <strong>+35%</strong>
+                    <span>Eficiência Média</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por que a sustentabilidade é o melhor negócio para você?</h2>
+                <p>Deixe o amadorismo para trás. O mercado global exige responsabilidade ambiental e eficiência.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon" aria-hidden="true">📉</div>
+                    <h3>Redução de Custos</h3>
+                    <p>Otimização radical do consumo de energia, água e gestão de resíduos, gerando economia direta no caixa.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon" aria-hidden="true">🌱</div>
+                    <h3>Atração de Capital</h3>
+                    <p>Fundos de investimento e parceiros comerciais priorizam empresas com selos e práticas ESG validadas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon" aria-hidden="true">🎯</div>
+                    <h3>Valor de Marca</h3>
+                    <p>Conecte-se com a geração de consumidores conscientes, dispostos a pagar mais por marcas verdes reais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucoes" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Programas de Transição Green</h2>
+                <p>Soluções ponta a ponta para governança, conformidade ambiental e eficiência energética.</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel-track" id="carousel-track" role="region" aria-live="polite">
+                    </div>
+                <div class="carousel-controls">
+                    <button id="carousel-prev" class="btn-nav" aria-label="Slide anterior">❮</button>
+                    <button id="carousel-next" class="btn-nav" aria-label="Próximo slide">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quem já transformou a operação conosco</h2>
+                <p>Resultados reais de empresas que uniram ecologia e alta lucratividade.</p>
+            </div>
+            <div class="grid grid-2">
+                <div class="testimonial-item">
+                    <p class="quote">"A EcoInova redesenhou nossa cadeia de suprimentos. Em 8 meses, reduzimos a pegada de carbono em 42% e economizamos R$ 140 mil em energia elétrica corporativa."</p>
+                    <div class="author">
+                        <strong>Roberto Almeida</strong>
+                        <span>Diretor de Operações, LogiGreen S.A.</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p class="quote">"Conseguimos a certificação ESG internacional com o suporte técnico impecável da equipe. Abriu portas para exportação na Europa."</p>
+                    <div class="author">
+                        <strong>Clara Vasconcelos</strong>
+                        <span>CEO, NaturaTextil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tudo o que você precisa saber sobre a transição ecológica corporativa.</p>
+            </div>
+            <div class="accordion" id="faq-accordion">
+                </div>
+        </div>
+    </section>
+
+    <section id="cta-form" class="cta-section">
+        <div class="container cta-container">
+            <div class="cta-info">
+                <h2>Inicie sua jornada rumo ao desperdício zero hoje.</h2>
+                <p>Vagas limitadas para o diagnóstico gratuito de eficiência este mês. Garanta a análise da sua empresa.</p>
+                <div class="scarcity-badge">🔥 Apenas 4 vagas restantes para este trimestre</div>
+            </div>
+            <div class="form-wrapper">
+                <form id="lead-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" required placeholder="Ex: João Silva">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo</label>
+                        <input type="email" id="email" required placeholder="Ex: joao@empresa.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="company-size">Tamanho da Empresa</label>
+                        <select id="company-size" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="1-10">Até 10 colaboradores</option>
+                            <option value="11-50">11 a 50 colaboradores</option>
+                            <option value="51-200">51 a 200 colaboradores</option>
+                            <option value="200+">Mais de 200 colaboradores</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Solicitar Diagnóstico Gratuito</button>
+                </form>
+                <div id="form-success" class="form-success" style="display: none;" role="alert">
+                    ✅ Recebido com sucesso! Nossa equipe técnica entrará em contato em até 24 horas úteis.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 EcoInova Consultoria Ambiental. Todos os direitos reservados. Projetado para máxima conversão.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
