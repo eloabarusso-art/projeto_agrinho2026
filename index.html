@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sustentabilidade - Futuro Verde</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="acessibilidade">
+<button onclick="aumentarFonte()">A+</button>
+<button onclick="diminuirFonte()">A-</button>
+<button onclick="altoContraste()">Contraste</button>
+</div>
+
+<header>
+<h1>🌎 Futuro Sustentável</h1>
+<p>Produção e Meio Ambiente em Equilíbrio</p>
+</header>
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#acoes">Ações</a>
+<a href="#galeria">Galeria</a>
+<a href="#quiz">Quiz</a>
+</nav>
+
+<section class="hero">
+<img class="animacao"
+src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+alt="Floresta sustentável">
+</section>
+
+<section id="sobre">
+<h2>🌱 O que é Sustentabilidade?</h2>
+<br>
+<p>
+Sustentabilidade significa utilizar os recursos naturais de forma responsável,
+garantindo qualidade de vida para as gerações atuais e futuras.
+Ela busca equilibrar crescimento econômico, desenvolvimento social e preservação ambiental.
+</p>
+</section>
+
+<section id="acoes">
+<h2>♻️ Ações Sustentáveis</h2>
+<br>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌳 Reflorestamento</h3>
+<p>Plantio de árvores para recuperar áreas degradadas.</p>
+</div>
+
+<div class="card">
+<h3>☀️ Energia Solar</h3>
+<p>Uso de fontes renováveis para reduzir a poluição.</p>
+</div>
+
+<div class="card">
+<h3>🚲 Mobilidade Verde</h3>
+<p>Uso de bicicletas e transporte sustentável.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 align="center">🌲 Árvores Plantadas</h2>
+<br>
+
+<div class="contador" id="contador">0</div>
+
+<center>
+<button onclick="plantarArvore()">Plantar Árvore</button>
+</center>
+</section>
+
+<section id="galeria">
+<h2>📸 Galeria Sustentável</h2>
+<br>
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1" alt="Natureza">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Floresta">
+
+<img src="https://images.unsplash.com/photo-1511497584788-876760111969" alt="Energia limpa">
+
+<img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7" alt="Sustentabilidade">
+
+</div>
+</section>
+
+<section id="quiz">
+
+<div class="quiz">
+
+<h2>🎯 Quiz Sustentável</h2>
+<br>
+
+<p>Qual destas é uma fonte de energia renovável?</p>
+
+<button onclick="resposta('errado')">Carvão</button>
+<button onclick="resposta('certo')">Energia Solar</button>
+<button onclick="resposta('errado')">Petróleo</button>
+
+<h3 id="resultado"></h3>
+
+</div>
+
+</section>
+
+<section>
+<h2 align="center">🎵 Sons da Natureza</h2>
+<br>
+
+<center>
+<button onclick="tocarSom()">Ouvir Som</button>
+</center>
+
+<audio id="som">
+<source src="https://www.soundjay.com/nature/birds-1.mp3" type="audio/mpeg">
+</audio>
+
+</section>
+
+<footer>
+<h3>🌍 Sustentabilidade: cuidar hoje para viver amanhã.</h3>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
